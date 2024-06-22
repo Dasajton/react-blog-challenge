@@ -1,0 +1,69 @@
+.blogsContainer {
+  background-color: #5b21b6;
+  width: 97.5%;
+  margin: 0 auto;
+  border-radius: 0.33rem;
+  padding: 0.33rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.33rem;
+
+  .blogEntry {
+    background-color: #a78bfa;
+    margin: 0.33rem;
+    padding: 0.33rem;
+    border-radius: 0.33rem;
+    box-shadow: 0 0 0.33rem rgba(0, 0, 0, 0.33);
+
+    .blogTitle {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #2e1065;
+    }
+    .blogDate {
+      font-size: 0.75rem;
+      font-style: italic;
+      margin-bottom: 0.33rem;
+      color: #ddd6fe;
+    }
+    .blogBody {
+      font-size: 1.1rem;
+      margin: 1rem 0.5rem;
+      color: #4c1d95;
+    }
+    .tagsContainer {
+      display: flex;
+      justify-content: space-between;
+      gap: 0.33rem;
+      margin: 0.33rem 0;
+
+      .blogTag span {
+        background-color: #5b21b6;
+        color: #ddd6fe;
+        padding: 0.33rem;
+        border-radius: 0.33rem;
+        margin: 0.33rem;
+        display: inline-block;
+        cursor: pointer;
+      }
+      .btnDeleteBlog {
+        background-color: #a855f7;
+        color: #ddd6fe;
+        padding: 0.33rem;
+        border: none;
+        border-radius: 0.33rem;
+        margin: 0.33rem;
+        display: inline-block;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.33s ease;
+
+        &:hover {
+          scale: 1.1;
+        }
+      }
+    }
+  }
+}
