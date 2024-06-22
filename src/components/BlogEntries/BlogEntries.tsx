@@ -21,11 +21,11 @@ export default function BlogEntries() {
           <p className="blogDate">{blogEntry.date}</p>
           <p className="blogBody">{blogEntry.body}</p>
           <div className="tagsContainer">
-            <p className="blogTag">
+            <div className="blogTag">
               {blogEntry.tags.map((blogTag) => (
                 <span>{blogTag}</span>
               ))}
-            </p>
+            </div>
             <button
               className="btnDeleteBlog"
               onClick={() => handleDeleteBlogEntry(blogEntry)}
