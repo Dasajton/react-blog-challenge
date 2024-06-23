@@ -1,4 +1,5 @@
 import "./BtnModalCreateBlog.scss";
+import { IoIosCreate } from "react-icons/io";
 import { useBlogContext } from "../../BlogContext";
 
 export default function ModalCreateBlog() {
@@ -10,7 +11,7 @@ export default function ModalCreateBlog() {
 
   return (
     <button className="btnCreateBlog" onClick={() => handleCreateBlog()}>
-      +
+      <IoIosCreate className="btnCreateIcon" />
     </button>
   );
 }

@@ -47,8 +47,9 @@
         cursor: pointer;
       }
       .btnDeleteBlog {
-        background-color: #a855f7;
-        color: #ddd6fe;
+        background-color: transparent;
+        font-size: 1.2rem;
+        color: #a855f7;
         padding: 0.33rem;
         border: none;
         border-radius: 0.33rem;
@@ -58,7 +59,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        transition: 0.33s ease;
+        transition: all 0.33s ease;
 
         &:hover {
           scale: 1.1;
