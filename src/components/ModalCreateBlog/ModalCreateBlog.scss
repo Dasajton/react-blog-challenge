@@ -23,9 +23,27 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      margin-bottom: 1.5rem;
 
       h2 {
         font-size: 1.5rem;
+        color: #a855f7;
+      }
+      .btnCloseModal {
+        background-color: transparent;
+        color: #a855f7;
+        font-size: 2rem;
+        border: none;
+        border-radius: 0.33rem;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          background-color: #f0f9ff;
+        }
       }
     }
 
@@ -43,9 +61,10 @@
         border: none;
       }
       .modalBtnCreate {
+        font-size: 1.1rem;
         background-color: #a855f7;
         color: #ddd6fe;
-        padding: 0.33rem;
+        padding: 0.66rem;
         border: none;
         border-radius: 0.33rem;
         cursor: pointer;

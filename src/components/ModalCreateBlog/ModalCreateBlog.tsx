@@ -1,4 +1,5 @@
 import "./ModalCreateBlog.scss";
+import { IoClose } from "react-icons/io5";
 import { useBlogContext } from "../../BlogContext";
 
 export default function ModalCreateBlog() {
@@ -16,7 +17,7 @@ export default function ModalCreateBlog() {
         <header className="modalHeader">
           <h2 className="modalHeadline">Create new Blog Entry</h2>
           <button className="btnCloseModal" onClick={handleCloseModal}>
-            Close
+            <IoClose />
           </button>
         </header>
 
